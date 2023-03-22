@@ -6,9 +6,29 @@
     xmlns:local="clr-namespace:Finance_Manager"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Dashboard">
+            <ShellContent
+                Title="Dashboard"
+                ContentTemplate="{DataTemplate local:DashboardPage}"
+                Route="DashboardPage" />        
+        </Tab>
+        <Tab Title="Add">
+            <ShellContent
+                Title="Add"
+                ContentTemplate="{DataTemplate local:AddPage}"
+                Route="AddPage" />
+        </Tab>
+        <Tab Title="Calendar">
+            <ShellContent
+                Title="Calendar"
+                ContentTemplate="{DataTemplate local:CalendarPage}"
+                Route="CalendarPage" />
+        </Tab>
+    </TabBar>
+        
+
+    
 
 </Shell>
+    
