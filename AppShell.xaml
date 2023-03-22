@@ -5,28 +5,29 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Finance_Manager"
     Shell.FlyoutBehavior="Disabled"
-    Shell.TabBarBackgroundColor="Black"
+    Shell.TabBarBackgroundColor="Black"    
     Shell.TabBarTitleColor="#0062F0"
     Shell.TabBarUnselectedColor="#A0A3A8"
     Shell.TitleColor="White"
     Shell.BackgroundColor="Black">
 
     <TabBar>
-        <Tab Title="Dashboard" Icon="dashboard.png">
+        <Tab Title="Dashboard" 
+             Icon="{OnPlatform Android='dashboard.png', iOS='dashboard_ios.png', MacCatalyst='dashboard_ios.png', WinUI='dashboard.png'}">
             <ShellContent
                 
                 Title="Dashboard"
                 ContentTemplate="{DataTemplate local:DashboardPage}"
                 Route="DashboardPage" />        
         </Tab>
-        <Tab Title="Add" Icon="plus.png">
+        <Tab Title="Add" Icon="{OnPlatform Android='plus.png', iOS='plus_ios.png', MacCatalyst='plus_ios.png', WinUI='plus.png'}">
             <ShellContent
                 
                 Title="Add"
                 ContentTemplate="{DataTemplate local:AddPage}"
                 Route="AddPage" />
         </Tab>
-        <Tab Title="Calendar" Icon="calendar.png">
+        <Tab Title="Calendar" Icon="{OnPlatform Android='calendar.png', iOS='calendar_ios.png', MacCatalyst='calendar_ios.png', WinUI='calendar.png'}">
             <ShellContent
                 Title="Calendar"
                 ContentTemplate="{DataTemplate local:CalendarPage}"
