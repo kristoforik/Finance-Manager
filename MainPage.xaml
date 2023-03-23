@@ -6,6 +6,7 @@
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
+            BackgroundColor="White"
             Padding="30,0"
             VerticalOptions="Center">
 
@@ -15,8 +16,8 @@
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
-
-
+            <!--This is my comment-->
+        
         </VerticalStackLayout>
     </ScrollView>
 
