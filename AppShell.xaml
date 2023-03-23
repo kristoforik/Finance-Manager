@@ -15,7 +15,7 @@
         <Tab Title="Dashboard" 
              Icon="{OnPlatform Android='dashboard.png', iOS='dashboard_ios.png', MacCatalyst='dashboard_ios.png', WinUI='dashboard.png'}">
             <ShellContent
-                
+
                 Title="Dashboard"
                 ContentTemplate="{DataTemplate local:DashboardPage}"
                 Route="DashboardPage" />        
