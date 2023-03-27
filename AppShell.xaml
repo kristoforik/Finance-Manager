@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="Finance_Manager.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -32,6 +32,19 @@
                 Title="Calendar"
                 ContentTemplate="{DataTemplate local:CalendarPage}"
                 Route="CalendarPage" />
+        </Tab>
+
+        <Tab Title="Finance" Icon="{OnPlatform Android='money.png', iOS='money.png', MacCatalyst='money.png', WinUI='money.png'}">
+            <ShellContent
+                Title="Finance"
+                ContentTemplate="{DataTemplate local:FinancePage}"
+                Route="FinancePage" />
+        </Tab>
+        <Tab Title="Profile" Icon="{OnPlatform Android='profile.png', iOS='profile.png', MacCatalyst='profile.png', WinUI='profile.png'}">
+            <ShellContent
+                Title="Profile"
+                ContentTemplate="{DataTemplate local:ProfilePage}"
+                Route="ProfilePage" />
         </Tab>
     </TabBar>
         
