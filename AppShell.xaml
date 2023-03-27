@@ -12,22 +12,22 @@
     Shell.BackgroundColor="Black">
 
     <TabBar>
-        <Tab Title="Dashboard" 
-             Icon="{OnPlatform Android='dashboard.png', iOS='dashboard_ios.png', MacCatalyst='dashboard_ios.png', WinUI='dashboard.png'}">
+        <Tab Title="Dashboard"
+             Icon="dashboard.png">
             <ShellContent
 
                 Title="Dashboard"
                 ContentTemplate="{DataTemplate local:DashboardPage}"
                 Route="DashboardPage" />        
         </Tab>
-        <Tab Title="Add" Icon="{OnPlatform Android='plus.png', iOS='plus_ios.png', MacCatalyst='plus_ios.png', WinUI='plus.png'}">
+        <Tab Title="Add" Icon="plus.png">
             <ShellContent
                 
                 Title="Add"
                 ContentTemplate="{DataTemplate local:AddPage}"
                 Route="AddPage" />
         </Tab>
-        <Tab Title="Calendar" Icon="{OnPlatform Android='calendar.png', iOS='calendar_ios.png', MacCatalyst='calendar_ios.png', WinUI='calendar.png'}">
+        <Tab Title="Calendar" Icon="calendar.png">
             <ShellContent
                 Title="Calendar"
                 ContentTemplate="{DataTemplate local:CalendarPage}"
