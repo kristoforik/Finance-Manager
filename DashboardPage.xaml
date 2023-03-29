@@ -7,9 +7,9 @@
              Padding="10">
     <Grid RowSpacing="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2.5*" />
+            <RowDefinition Height="3*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -20,7 +20,7 @@
 
         <VerticalStackLayout Grid.Column="1" HorizontalOptions="Start">
             <Label Text="Finance" FontSize="30" TextColor="#0062F0" Margin="10"/>
-            <Frame BackgroundColor="Transparent" BorderColor="#0062F0" Padding="5" CornerRadius="20">
+            <Frame BackgroundColor="Transparent" BorderColor="#0062F0" Padding="10" CornerRadius="20">
             <Grid MinimumHeightRequest="200">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="4*"/>
@@ -39,14 +39,14 @@
                     <Label Text="+1105$" TextColor="Green" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
                            FontSize="35" VerticalOptions="Center" HorizontalOptions="Center"/>
                     <Label Text="For the last 30 days" Grid.Row="3" Grid.Column="1" 
-                           TextColor="Grey" FontSize="10" HorizontalOptions="End"/>
+                           TextColor="Grey" FontSize="12" HorizontalOptions="End"/>
                 </Grid>
             </Frame>
         </VerticalStackLayout>
 
         <VerticalStackLayout Grid.Column="1" Grid.Row="1" HorizontalOptions="Start">
             <Label Text="Reminders" FontSize="30" TextColor="#0062F0" Margin="10"/>
-            <Frame BackgroundColor="Transparent" BorderColor="#0062F0" Padding="5" CornerRadius="20">
+            <Frame BackgroundColor="Transparent" BorderColor="#0062F0" Padding="10" CornerRadius="20">
                 <Grid MinimumHeightRequest="100" MinimumWidthRequest="300">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="5*"/>
@@ -89,7 +89,7 @@
                     <Label Text="1. Carrot..." Grid.Row="1" Grid.Column="1" FontSize="18" HorizontalOptions="Start"
                            TextColor="Grey"/>
                     <Label Text="MAR 07 23" Grid.Row="2" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"
-                           TextColor="Grey" FontSize="10"/>
+                           TextColor="Grey" FontSize="12"/>
                 </Grid>
             </Frame>
         </VerticalStackLayout>
