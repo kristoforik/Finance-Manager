@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Finance_Manager.Models
 {
-    public class EarningsRepository
+    public static class EarningsRepository
     {
     }
 }

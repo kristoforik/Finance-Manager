@@ -11,7 +11,7 @@ namespace Finance_Manager.Models
     {
         Housing, Transportation, Food, HealthFitness, PersonalCare, Education, DebtPayments, Insuarance, GiftsDonations
     }
-    public class ExpensesRepository
+    public static class ExpensesRepository
     {
 
     }
