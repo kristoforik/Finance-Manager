@@ -2,35 +2,106 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Finance_Manager.AddPage"
-             Title="Add"
+             Title="Add+"
              BackgroundColor="Black"
              Padding="20">
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="20">
 
-        
-        
-        <Frame BackgroundColor="Black" BorderColor="LightYellow" Padding="-2" CornerRadius="25" >
-            <Border BackgroundColor="Yellow" StrokeThickness="1" Padding="3">
-                <Frame BackgroundColor="Black" CornerRadius="25">
-            <Grid MaximumHeightRequest="70">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="3*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="5*"/>
-                </Grid.ColumnDefinitions>
+        <Frame BackgroundColor="Black" BorderColor="Green" Padding="-1" CornerRadius="25" >
+            <Border BackgroundColor="Green" StrokeThickness="0" Padding="3">
+                <Frame BackgroundColor="Black" CornerRadius="25" BorderColor="Green">
+                    <Grid MaximumHeightRequest="70">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
 
-                <Button BackgroundColor="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2"></Button>
-                <Label Text=" Note" Grid.Column="1" Grid.Row="0" TextColor="LightYellow" VerticalOptions="Center" FontSize="35"/>
-                <Label Text="   Add a new note" Grid.Column="1" Grid.Row="1" TextColor="White"/>
-                <Label Text="+" Grid.Row="0" TextColor="LightYellow" FontSize="50" 
+                        <Button x:Name="EarningsButton" BackgroundColor="Transparent" Clicked="EarningsButton_Clicked"
+                                Grid.ColumnSpan="2" Grid.RowSpan="2"></Button>
+                        <Label Text=" Earnings" Grid.Column="1" Grid.Row="0" TextColor="Green" VerticalOptions="Center" FontSize="35"/>
+                        <Label Text="   Add new income" Grid.Column="1" Grid.Row="1" TextColor="DarkOliveGreen"/>
+                        <Label Text="+" Grid.Row="0" TextColor="Green" FontSize="50" 
                                HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
-            </Grid>
+                    </Grid>
                 </Frame>
             </Border>
         </Frame>
-        
+
+        <Frame BackgroundColor="Black" BorderColor="Red" Padding="-1" CornerRadius="25" >
+            <Border BackgroundColor="Red" StrokeThickness="0" Padding="3">
+                <Frame BackgroundColor="Black" CornerRadius="25" BorderColor="Red">
+                    <Grid MaximumHeightRequest="70">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ExpensesButton" BackgroundColor="Transparent" Clicked="ExpensesButton_Clicked"
+                                Grid.ColumnSpan="2" Grid.RowSpan="2"></Button>
+                        <Label Text=" Expenses" Grid.Column="1" Grid.Row="0" TextColor="OrangeRed" VerticalOptions="Center" FontSize="35"/>
+                        <Label Text="   Add a new spending" Grid.Column="1" Grid.Row="1" TextColor="DarkRed"/>
+                        <Label Text="+" Grid.Row="0" TextColor="Red" FontSize="50" 
+                               HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
+                    </Grid>
+                </Frame>
+            </Border>
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Yellow" Padding="-1" CornerRadius="25" >
+            <Border BackgroundColor="Yellow" StrokeThickness="0" Padding="3">
+                <Frame BackgroundColor="Black" CornerRadius="25" BorderColor="Yellow">
+                    <Grid MaximumHeightRequest="70">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="NoteButton" BackgroundColor="Transparent" Clicked="NoteButton_Clicked"
+                                Grid.ColumnSpan="2" Grid.RowSpan="2"></Button>
+                        <Label Text=" Note" Grid.Column="1" Grid.Row="0" TextColor="Yellow" VerticalOptions="Center" FontSize="35"/>
+                        <Label Text="   Add a new note" Grid.Column="1" Grid.Row="1" TextColor="Yellow"/>
+                        <Label Text="+" Grid.Row="0" TextColor="Yellow" FontSize="50" 
+                               HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
+                    </Grid>
+                </Frame>
+            </Border>
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Purple" Padding="-1" CornerRadius="25" >
+            <Border BackgroundColor="Purple" StrokeThickness="0" Padding="3">
+                <Frame BackgroundColor="Black" CornerRadius="25" BorderColor="Purple">
+                    <Grid MaximumHeightRequest="70">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ReminderButton" BackgroundColor="Transparent" Clicked="ReminderButton_Clicked"
+                                Grid.ColumnSpan="2" Grid.RowSpan="2"></Button>
+                        <Label Text=" Reminder" Grid.Column="1" Grid.Row="0" TextColor="Purple" VerticalOptions="Center" FontSize="35"/>
+                        <Label Text="   Set a new reminder" Grid.Column="1" Grid.Row="1" TextColor="MediumPurple"/>
+                        <Label Text="+" Grid.Row="0" TextColor="Purple" FontSize="50" 
+                               HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
+                    </Grid>
+                </Frame>
+            </Border>
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>
